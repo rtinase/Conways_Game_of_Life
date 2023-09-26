@@ -1,0 +1,14 @@
+D:\Projects\Projects C#\Conway's Game of Life\bin\Debug\net7.0\Conway's Game of Life.exe
+D:\Projects\Projects C#\Conway's Game of Life\bin\Debug\net7.0\Conway's Game of Life.deps.json
+D:\Projects\Projects C#\Conway's Game of Life\bin\Debug\net7.0\Conway's Game of Life.runtimeconfig.json
+D:\Projects\Projects C#\Conway's Game of Life\bin\Debug\net7.0\Conway's Game of Life.dll
+D:\Projects\Projects C#\Conway's Game of Life\bin\Debug\net7.0\Conway's Game of Life.pdb
+D:\Projects\Projects C#\Conway's Game of Life\obj\Debug\net7.0\Conway's Game of Life.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Projects C#\Conway's Game of Life\obj\Debug\net7.0\Conway's Game of Life.AssemblyInfoInputs.cache
+D:\Projects\Projects C#\Conway's Game of Life\obj\Debug\net7.0\Conway's Game of Life.AssemblyInfo.cs
+D:\Projects\Projects C#\Conway's Game of Life\obj\Debug\net7.0\Conway's Game of Life.csproj.CoreCompileInputs.cache
+D:\Projects\Projects C#\Conway's Game of Life\obj\Debug\net7.0\Conway's Game of Life.dll
+D:\Projects\Projects C#\Conway's Game of Life\obj\Debug\net7.0\refint\Conway's Game of Life.dll
+D:\Projects\Projects C#\Conway's Game of Life\obj\Debug\net7.0\Conway's Game of Life.pdb
+D:\Projects\Projects C#\Conway's Game of Life\obj\Debug\net7.0\Conway's Game of Life.genruntimeconfig.cache
+D:\Projects\Projects C#\Conway's Game of Life\obj\Debug\net7.0\ref\Conway's Game of Life.dll
