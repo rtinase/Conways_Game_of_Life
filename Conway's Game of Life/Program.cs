@@ -9,18 +9,20 @@ namespace Program{
             int amtRows = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("How many steps do you want?");
             int amtSteps = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("What alive ratio do you want? (Double number)");
+            double aliveRatio = Convert.ToDouble(Console.ReadLine());   // asking about input data
 
 
             Game myGame = new Game();
             int doneSteps = 1;
 
-            bool[,] fields = myGame.make2DArray(amtRows, amtColumns); // create a new random filling of the grid
+            bool[,] fields = myGame.make2DArray(amtRows, amtColumns, aliveRatio); // create a new random filling of the grid
             for(int i = 0; i < amtSteps; i++){
                 if(i != amtSteps) Console.Clear(); 
                 myGame.makeGrid(fields); // drawing the grid 
                 fields = myGame.computingNextGeneration(fields); // reload of the grid
                 Console.WriteLine("\n\n STEP: " + doneSteps++);
-                Thread.Sleep(500);               
+                Thread.Sleep(1000);               
             }
             
         
@@ -35,14 +37,14 @@ namespace Program{
     class Game{
         private int rowsCou = 0;
         private int colsCou = 0;  // разделить конструктор и метод
-        public bool[,] make2DArray(int rows = 50, int cols = 50){ //creates an array of fields 
+        public bool[,] make2DArray(int rows = 50, int cols = 50, double aliveRatio = 0.5){ //creates an array of fields 
             rowsCou = rows;
             colsCou = cols;
             bool[,] arr = new bool[rowsCou, colsCou];  //gives a size to the grid
             Random rnd = new Random();
             for(int i = 0; i < rowsCou; i++){ // loop that gives values to the array
                 for(int j = 0; j < colsCou; j++){
-                    arr[i,j] = (rnd.Next(2) == 0) ? false: true; // Math.Round(rnd.NextDouble()) as an option
+                    arr[i,j] = arr[i, j] = rnd.NextDouble() < aliveRatio; // Set cell as alive if random value is less than the desired alive ratio.
                 }
             }
             return arr;
